@@ -122,8 +122,31 @@ By studying this project, you'll learn about:
 - Importing external JavaScript files and using functions from them.
 - Encapsulation of logic in functions and objects.
 
-**8. Additional Improvements:**
+**8. Que es y para que sirve:**
+- Los elementos <input> de tipo text crean campos de texto básicos de una sola línea.
+        input type="text"
+- Un placeholder es un código de «ocupante de espacio»
+	placeholder="Enter your text">
+- El Elemento HTML <label> representa una etiqueta, el atributo for, o ubicando el control dentro del elemento label.
+	<label for="shiftAmount">
+- La cantidad máxima de cambio
+	"shiftAmount"
+- Devuelve una referencia al elemento por su ID
+	const shiftAmountElement = document.getElementById('shiftAmount');
 
-Feel free to expand upon this project by adding more encryption algorithms or creating a user interface for different ciphers. You can also explore more advanced web development concepts, such as handling form validation and error handling.
+-<option> se usa para representar un item dentro de un <select>
+	option.text = i.toString();
+  	option.value = i;
+  	shiftAmountElement.appendChild(option);
 
-**Happy learning and coding!**
+- Bucles e iteración: forma rápida y sencilla de hacer algo repetidamente.
+        for (let i = 0; i < text.length; i++) {
+                let char = text[i];
+
+**9. Mejoras Adicionales:**
+
+Siéntete libre de expandir este proyecto agregando más algoritmos de cifrado o creando una interfaz de usuario para diferentes cifrados. También puedes explorar conceptos más avanzados de desarrollo web, como el manejo de validación de formularios y manejo de errores.
+
+**¡Feliz aprendizaje y codificación!**
+
+**Caesar Cipher Encoder/Decoder**
