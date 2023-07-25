@@ -1,32 +1,26 @@
 import caesarCipher from './cipher.js';
 // index.js
 
-document.addEventListener('DOMContentLoaded', () => {
-    const textInput = document.getElementById('text');
-    const shiftSelect = document.getElementById('shift');
-    const encodeBtn = document.getElementById('encodeBtn');
-    const decodeBtn = document.getElementById('decodeBtn');
-    const clearBtn = document.getElementById('clearBtn');
-    const encodedText = document.getElementById('encodedText');
-    const decodedText = document.getElementById('decodedText');
+const inputTextElement = document.getElementById('inputText');
+const shiftAmountElement = document.getElementById('shiftAmount');
+const encodeTextElement = document.getElementById('encodeText');
+const decodeTextElement = document.getElementById('decodeText');
 
-    encodeBtn.addEventListener('click', () => {
-        const text = textInput.value;
-        const shift = parseInt(shiftSelect.value);
-        const encoded = caesarCipher(text, shift);
-        encodedText.textContent = encoded;
-    });
+function encode() {
+  const inputText = inputTextElement.value;
+  const shiftAmount = parseInt(shiftAmountElement.value);
+  const encodeText = caesarCipher(inputText, shiftAmount);
+  encodeTextElement.value = encodeText;
+  decodeTextElement.value = ''; // Limpiamos el campo de texto "Decode Text" al hacer clic en "Encode"
+}
 
-    decodeBtn.addEventListener('click', () => {
-        const text = textInput.value;
-        const shift = parseInt(shiftSelect.value);
-        const decoded = caesarCipher(text, 26 - shift); // To decode, use the inverse shift.
-        decodedText.textContent = decoded;
-    });
+function decode() {
+  // Simplemente asignamos el valor del campo de texto de entrada al campo de texto "Decode Text"
+  decodedTextElement.value = inputTextElement.value;
+}
 
-    clearBtn.addEventListener('click', () => {
-        textInput.value = '';
-        encodedText.textContent = '';
-        decodedText.textContent = '';
-    });
-});
+function clearText() {
+  inputTextElement.value = '';
+  encodeTextElement.value = '';
+  decodeTextElement.value = '';
+}
