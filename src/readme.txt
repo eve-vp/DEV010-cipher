@@ -17,8 +17,8 @@ En el código JavaScript, encontrarás varias variables. Veamos su propósito:
 
 - `inputTextElement`: Esta variable almacena una referencia al elemento de entrada donde el usuario ingresa el texto que se va a cifrar o descifrar.
 - `shiftAmountElement`: Esta variable almacena una referencia al elemento select que permite al usuario elegir el desplazamiento (de 1 a 25).
-- `encodedTextElement`: Esta variable almacena una referencia al elemento textarea donde se mostrará el texto cifrado.
-- `decodedTextElement`: Esta variable almacena una referencia al elemento textarea donde se mostrará el texto descifrado.
+- `encodeTextElement`: Esta variable almacena una referencia al elemento textarea donde se mostrará el texto cifrado.
+- `decodeTextElement`: Esta variable almacena una referencia al elemento textarea donde se mostrará el texto descifrado.
 
 **3. Entendiendo los Objetos:**
 
@@ -61,18 +61,18 @@ Al estudiar este proyecto, aprenderás sobre:
 - Los elementos <input> de tipo text crean campos de texto básicos de una sola línea.
         input type="text"
 - Un placeholder es un código de «ocupante de espacio»
-	placeholder="Enter your text">
+	      placeholder="Enter your text">
 - El Elemento HTML <label> representa una etiqueta, el atributo for, o ubicando el control dentro del elemento label.
-	<label for="shiftAmount">
+	     <label for="shiftAmount">
 - La cantidad máxima de cambio
-	"shiftAmount"
+	    "shiftAmount"
 - Devuelve una referencia al elemento por su ID
-	const shiftAmountElement = document.getElementById('shiftAmount');
+	    const shiftAmountElement = document.getElementById('shiftAmount');
 
 -<option> se usa para representar un item dentro de un <select>
-	option.text = i.toString();
-  	option.value = i;
-  	shiftAmountElement.appendChild(option);
+     option.text = i.toString();
+        option.value = i;
+        shiftAmountElement.appendChild(option);
 
 - Bucles e iteración: forma rápida y sencilla de hacer algo repetidamente.
         for (let i = 0; i < text.length; i++) {
@@ -85,9 +85,10 @@ Siéntete libre de expandir este proyecto agregando más algoritmos de cifrado o
 
 **¡Feliz aprendizaje y codificación!**
 
-**Caesar Cipher Encoder/Decoder**
 
- 
+
+
+**Caesar Cipher Encoder/Decoder**
 
 Welcome to the Caesar Cipher Encoder/Decoder project! This is a simple web application that allows you to encode and decode text using the Caesar Cipher encryption technique. This README will serve as a learning manual to understand the usage of variables, objects, and all the necessary commands to make the web page function properly.
 
@@ -106,8 +107,8 @@ In the JavaScript code, you will encounter several variables. Let's understand t
 
 - `inputTextElement`: This variable stores a reference to the input element where the user enters the text to be encoded or decoded.
 - `shiftAmountElement`: This variable stores a reference to the select element that allows the user to choose the shift amount (1 to 25).
-- `encodedTextElement`: This variable stores a reference to the textarea element where the encoded text will be displayed.
-- `decodedTextElement`: This variable stores a reference to the textarea element where the decoded text will be displayed.
+- `encodeTextElement`: This variable stores a reference to the textarea element where the encoded text will be displayed.
+- `decodeTextElement`: This variable stores a reference to the textarea element where the decoded text will be displayed.
 
 **3. Understanding Objects:**
 
