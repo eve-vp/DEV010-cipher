@@ -1,6 +1,7 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  font-family: Ubuntu, sans-serif;
+  background-image: url("https://e1.pxfuel.com/desktop-wallpaper/520/3/desktop-wallpaper-noche-estrellada-starry-night-van-gogh.jpg");
+  background-size: contein;
   margin: 0;
   padding: 0;
 }
@@ -19,7 +20,7 @@ h1 {
 
 input[type="text"],
 textarea {
-  width: 100%;
+  width: 95%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
@@ -33,12 +34,12 @@ textarea {
 }
 
 label {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 button {
-  padding: 10px 20px;
-  background-color: #007BFF;
+  padding: 10px 10px;
+  background-color: #f95951;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -46,7 +47,7 @@ button {
 }
 
 button:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .output {
@@ -54,6 +55,6 @@ button:not(:last-child) {
 }
 
 textarea[readonly] {
-  background-color: #f0f0f0;
+  background-color: #cce2dd;
   cursor: not-allowed;
 }
