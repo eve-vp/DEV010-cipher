@@ -1,17 +1,17 @@
 body {
   font-family: Ubuntu, sans-serif;
   background-image: url("https://e1.pxfuel.com/desktop-wallpaper/520/3/desktop-wallpaper-noche-estrellada-starry-night-van-gogh.jpg");
-  background-size: contein;
+  background-size: contain;
   margin: 0;
   padding: 0;
 }
 
 .container {
-  max-width: 600px;
-  margin: 50px auto;
+  max-width: 600px; /*limitar el ancho máximo del contenido. */
+  margin: 50px auto; /* Centra el contenedor horizontalmente. */
   padding: 20px;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);/* Agrega una sombra al contenedor para darle profundidad visual. */
   border-radius: 5px;
 }
 
@@ -39,23 +39,24 @@ label {
 }
 
 button {
-  padding: 10px 10px;
+  padding: 10px 10px; /* Define un espacio interno para los botones. */
   background-color: #f95951;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
-
+/*:not(): es un pseudo-selector que se utiliza para seleccionar elementos que no cumplan con ciertas condiciones. */
+/*:last-child: es otro pseudo-selector, selecciona el último elemento <button> en su contenedor. */
 button:not(:last-child) {
-  margin-right: 5px;
+  margin-right: 5px; /* Agrega un espacio entre los botones. */
 }
 
 .output {
   margin-top: 20px;
 }
 
-textarea[readonly] {
+textarea[readonly] { */ selector de atributo selecciona todos los elementos de textarea*/
   background-color: #cce2dd;
-  cursor: not-allowed;
+  cursor: not-allowed; /* Cambia el cursor a "no permitido" para las áreas de texto en solo lectura. */
 }
